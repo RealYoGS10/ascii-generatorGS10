@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Text Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ASCII Text Generator</h1>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <input type="text" id="textInput" placeholder="Enter your text here">
+            <select id="fontSelect">
+                <option value="Standard">Standard</option>
+                <option value="Slant">Slant</option>
+                <option value="Ghost">Ghost</option>
+                <option value="Big">Big</option>
+                <option value="Block">Block</option>
+            </select>
+            <button onclick="generateASCII()">Generate</button>
+        </div>
+
+        <div id="asciiOutput" class="output-section"></div>
+    </main>
+
+    <footer>
+        <p>Made by You | ASCII Fun 😎</p>
+    </footer>
+
+    <!-- Figlet.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/figlet/1.2.4/figlet.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
